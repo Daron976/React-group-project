@@ -1,1 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
 
+.navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.NavBar {
+  display: flex;
+  gap: 20px;
+}
+
+.NavBar>img {
+  width: 80px;
+}
+
+.Links {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: underline;
+}
