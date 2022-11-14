@@ -1,0 +1,22 @@
+.navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.NavBar {
+  display: flex;
+  gap: 20px;
+}
+
+.NavBar>img {
+  width: 80px;
+}
+
+.Links {
+  display: flex;
+  gap: 20px;
+}
