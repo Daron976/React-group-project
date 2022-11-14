@@ -1,9 +1,7 @@
 import React from 'react';
 
-function Rockets() {
-  return (
-    <div>Rockets</div>
-  );
-}
+const Rockets = () => (
+  <section className="rockets-holder" />
+);
 
 export default Rockets;

@@ -20,7 +20,7 @@ body {
   gap: 20px;
 }
 
-.NavBar>img {
+.NavBar > img {
   width: 80px;
 }
 
@@ -35,4 +35,17 @@ a {
 
 a:focus {
   text-decoration: underline;
+}
+
+/* missions */
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+td {
+  border: 1px solid black;
+  padding: 1rem;
 }
