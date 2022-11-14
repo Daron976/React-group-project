@@ -20,7 +20,7 @@ body {
   gap: 20px;
 }
 
-.NavBar>img {
+.NavBar > img {
   width: 80px;
 }
 
@@ -35,4 +35,8 @@ a {
 
 a:focus {
   text-decoration: underline;
+}
+
+.leave {
+  color: red;
 }
