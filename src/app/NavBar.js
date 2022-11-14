@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../resources/planet.png';
+import logo from '../resources/planet.png';
 
 const NavBar = () => (
   <div className="navs">
