@@ -49,3 +49,15 @@ td {
   border: 1px solid black;
   padding: 1rem;
 }
+
+/* rockets */
+
+.rocket {
+  display: flex;
+  margin: 2rem 5rem;
+  gap: 1rem;
+}
+
+.rocket-img {
+  width: 10rem;
+}
