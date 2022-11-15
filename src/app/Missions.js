@@ -9,8 +9,10 @@ const Missions = () => {
   const missions = useSelector((state) => state.missionReducer);
 
   useEffect(() => {
-    dispatch(fetchMissons());
-  }, [dispatch]);
+    if (missions.length !== 10) {
+      dispatch(fetchMissons());
+    }
+  });
 
   return (
     <section>

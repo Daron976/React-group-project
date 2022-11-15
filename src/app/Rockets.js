@@ -9,8 +9,10 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.rocketReducer);
 
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (rockets.length !== 4) {
+      dispatch(fetchRockets());
+    }
+  });
 
   return (
     <section className="rockets-holder">
