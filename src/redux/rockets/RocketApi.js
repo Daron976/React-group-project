@@ -28,7 +28,7 @@ export const fetchRockets = () => async (dispatch) => fetch(APIURLPATH)
 const rocketReducer = (state = defaultState, action) => {
   switch (action.type) {
     case FULLFILED:
-      return [...state, ...action.payload.obj];
+      return [...action.payload.obj];
     default:
       return state;
   }
