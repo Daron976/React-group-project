@@ -12,7 +12,7 @@ const Rockets = () => {
     if (rockets.length !== 4) {
       dispatch(fetchRockets());
     }
-  }, [dispatch]);
+  });
 
   return (
     <section className="rockets-holder">

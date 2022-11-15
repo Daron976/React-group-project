@@ -12,7 +12,7 @@ const Missions = () => {
     if (missions.length !== 10) {
       dispatch(fetchMissons());
     }
-  }, [dispatch]);
+  });
 
   return (
     <section>
