@@ -16,7 +16,7 @@ const Rockets = () => {
     <section className="rockets-holder">
       {rockets.map((rocket) => (
         <RocketItems
-          // key={rocket.id}
+          key={rocket.id}
           img={rocket.flickr_images[0]}
           name={rocket.rocket_name}
           description={rocket.description}
