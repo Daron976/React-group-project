@@ -10,7 +10,7 @@ const MyProfile = () => {
       <ul className="mission-list">
         {joinedMissions
           .filter((mission) => mission.reserved === true)
-          .map((mission) => <li key={mission.mission_id}>{mission.mission_name}</li>)}
+          .map((mission) => <li className="mission-list-item" key={mission.mission_id}>{mission.mission_name}</li>)}
       </ul>
     </section>
   );

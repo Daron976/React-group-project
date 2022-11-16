@@ -29,10 +29,10 @@ const MissionItems = (props) => {
 
   return (
     <tr>
-      <td>{name}</td>
-      <td>{description}</td>
-      <td>{memberState}</td>
-      <td>
+      <td className='td-name'>{name}</td>
+      <td className='td-description'>{description}</td>
+      <td className='td-status'>{memberState}</td>
+      <td className='td-btn'>
         <button
           type="button"
           name="join"

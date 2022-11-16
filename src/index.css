@@ -41,13 +41,34 @@ a:focus {
 
 table {
   border-collapse: collapse;
-  border: 1px solid black;
-  margin: 1rem;
+  margin: 2rem 10.5rem;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+tr:nth-child(-n+1) {
+  background-color: #E0E0E0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: none;
+}
+
+tr:nth-child(-n+10) {
+  border-bottom: 1px solid #C8C8C8;
 }
 
 td {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
+}
+
+td:nth-child(-n+3) {
+  border-right: 1px solid #C8C8C8;
 }
 
 /* rockets */
@@ -60,4 +81,23 @@ td {
 
 .rocket-img {
   width: 10rem;
+}
+
+/* my-profile */
+
+.join-missions {
+  margin-top: 2rem;
+  margin-left: 10.5rem;
+  max-width: 20rem;
+}
+
+.join-missions ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.mission-list-item {
+  list-style: none;
+  border: 1px solid #C8C8C8;
 }
