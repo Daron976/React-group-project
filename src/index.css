@@ -1,63 +1,34 @@
-body {
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
-  min-height: 100vh;
-  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.navs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  margin-top: 5px;
-}
+/* body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
 
-.NavBar {
-  display: flex;
-  gap: 20px;
-}
-
-.NavBar > img {
-  width: 80px;
-}
-
-.Links {
-  display: flex;
-  gap: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: underline;
-}
-
-/* missions */
-
-table {
-  border-collapse: collapse;
-  border: 1px solid black;
-  margin: 1rem;
-}
-
-td {
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-/* rockets */
-
-.rocket {
-  display: flex;
-  margin: 2rem 5rem;
-  gap: 1rem;
-}
-
-.rocket-img {
-  width: 10rem;
-}
+/* code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+} */
