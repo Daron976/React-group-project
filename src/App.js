@@ -6,17 +6,12 @@ import Rockets from './app/Rockets';
 import Missions from './app/Missions';
 import MyProfile from './app/MyProfile';
 import { fetchMissons } from './redux/missions/missions';
-import { fetchRockets } from './redux/rockets/RocketApi';
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMissons());
-  }, [dispatch]);
-
-  useEffect(() => {
-    dispatch(fetchRockets());
   }, [dispatch]);
 
   return (

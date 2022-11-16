@@ -1,21 +1,7 @@
-import { useSelector } from 'react-redux';
-import RocketItems from './rocket-items';
-
-const Rockets = () => {
-  const rockets = useSelector((state) => state.rocketReducer);
-
+function Rockets() {
   return (
-    <section className="rockets-holder">
-      {rockets.map((rocket) => (
-        <RocketItems
-          key={rocket.id}
-          img={rocket.flickr_images[0]}
-          name={rocket.rocket_name}
-          description={rocket.description}
-        />
-      ))}
-    </section>
+    <div>Rockets</div>
   );
-};
+}
 
 export default Rockets;
