@@ -48,7 +48,7 @@ Rocket.propTypes = {
 
 const Rockets = () => {
   const dispatch = useDispatch();
-  const rocketsData = useSelector((state) => state.rockets);
+  const rocketsData = useSelector((state) => state.rocketReducer);
   useEffect(() => {
     if (!rocketsData.length) {
       dispatch(getRockets());
