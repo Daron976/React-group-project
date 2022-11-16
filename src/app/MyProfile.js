@@ -1,9 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-function MyProfile() {
+const MyProfile = () => {
+  const joinedMissions = useSelector((state) => state.missionReducer);
+
   return (
-    <div>MyProfile</div>
+    <section className="join-missions">
+      <h1>My Missions</h1>
+      <ul className="mission-list">
+        {joinedMissions
+          .filter((mission) => mission.reserved === true)
+          .map((mission) => <li key={mission.mission_id}>{mission.mission_name}</li>)}
+      </ul>
+    </section>
   );
-}
+};
 
 export default MyProfile;
