@@ -17,7 +17,7 @@ h1 {
   align-items: center;
 }
 
-.NavBar>img {
+.NavBar > img {
   width: 80px;
 }
 
@@ -36,7 +36,7 @@ h1 {
 }
 
 *.active:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .homel,
