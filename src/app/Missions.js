@@ -1,18 +1,8 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissons } from '../redux/missions/missions';
+import { useSelector } from 'react-redux';
 import MissionItems from './mission-items';
 
 const Missions = () => {
-  const dispatch = useDispatch();
-
   const missions = useSelector((state) => state.missionReducer);
-
-  useEffect(() => {
-    if (missions.length !== 10) {
-      dispatch(fetchMissons());
-    }
-  });
 
   return (
     <section>
@@ -29,6 +19,7 @@ const Missions = () => {
               key={mission.mission_id}
               name={mission.mission_name}
               description={mission.description}
+              id={mission.mission_id}
             />
           ))}
         </tbody>
