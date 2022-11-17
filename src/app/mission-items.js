@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -21,25 +20,25 @@ const MissionItems = (props) => {
       setMemberState('Active Member');
       dispatch(join(id));
     } else {
-      dispatch(leave(id))
-      setMemberState('NOT A MEMBER')
+      dispatch(leave(id));
+      setMemberState('NOT A MEMBER');
       setBtnState('Join Mission');
     }
-  }
+  };
 
   return (
     <tr>
-      <td className='td-name'>{name}</td>
-      <td className='td-description'>{description}</td>
+      <td className="td-name">{name}</td>
+      <td className="td-description">{description}</td>
       <td>
         <div
-          className='td-status'
-          style={{background: memberState === 'NOT A MEMBER' ? '#6c767c' : '#24a1b3'}}
+          className="td-status"
+          style={{ background: memberState === 'NOT A MEMBER' ? '#6c767c' : '#24a1b3' }}
         >
           {memberState}
         </div>
       </td>
-      <td className='td-btn'>
+      <td className="td-btn">
         <button
           type="button"
           name="join"
@@ -59,6 +58,7 @@ const MissionItems = (props) => {
 };
 
 MissionItems.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
