@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyProfile from '../MyProfile/MyProfile';
 import Rockets from './Rockets';
-import { store } from '../../redux/configureStore';
+import store from '../../redux/configureStore';
 
 describe('Rocket components', () => {
   it('Render component', () => {
