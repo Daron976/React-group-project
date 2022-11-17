@@ -131,7 +131,8 @@ td:nth-child(-n+3) {
   padding: 0;
 }
 
-.mission-list-item {
+.mission-list-item,
+.rocket-list-item {
   list-style: none;
   border-bottom: 1px solid #c8c8c8;
   padding: 1rem 0.5rem;
