@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile Items Profile container items renders as expected 1`] = `
+<section
+  className="profile-container"
+>
+  <section
+    className="join-missions"
+  >
+    <h1>
+      My Missions
+    </h1>
+    <ul
+      className="mission-list"
+    >
+      <li
+        className="mission-list-item"
+      />
+    </ul>
+  </section>
+  <section
+    className="reserved-rockets"
+  >
+    <h1>
+      My Rockets
+    </h1>
+    <ul
+      className="rocket-list"
+    >
+      <li
+        className="rocket-list-item"
+      />
+    </ul>
+  </section>
+</section>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Rockets container items renders as expected 1`] = `
+<div
+  className="Rocketslist"
+>
+  <div
+    className="each"
+  >
+    <div
+      className="pictFrame"
+    >
+      <img
+        alt="Falcon 1"
+        className="pict"
+        src={
+          Array [
+            "https://imgur.com/DaCfMsj.jpg",
+            "https://imgur.com/azYafd8.jpg",
+          ]
+        }
+      />
+    </div>
+    <div
+      className="infor"
+    >
+      <h2>
+        Falcon 1
+      </h2>
+      <p>
+        <span
+          className="reservRock"
+        >
+          Reserved
+        </span>
+        The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009.
+      </p>
+      <button
+        className="rocketBtn btn btn-outline-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel reservation
+      </button>
+    </div>
+  </div>
+</div>
+`;
