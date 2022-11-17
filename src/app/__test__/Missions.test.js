@@ -1,12 +1,12 @@
 import renderer from 'react-test-renderer';
 import Missions from '../__mocks__/Missions';
 
-describe('Mission items', () => {
+describe('Missions', () => {
   test('Mission container items renders as expected', async () => {
-    const snapMissionItems = renderer.create(
+    const snapMissions = renderer.create(
       <Missions />,
     )
       .toJSON();
-    expect(snapMissionItems).toMatchSnapshot();
+    expect(snapMissions).toMatchSnapshot();
   });
 });

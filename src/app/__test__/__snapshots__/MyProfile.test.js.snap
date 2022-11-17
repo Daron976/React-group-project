@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Profile Items Profile container items renders as expected 1`] = `
+exports[`Profile Profile container items renders as expected 1`] = `
 <section
   className="profile-container"
 >

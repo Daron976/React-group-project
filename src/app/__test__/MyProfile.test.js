@@ -1,12 +1,12 @@
 import renderer from 'react-test-renderer';
 import MyProfile from '../__mocks__/MyProfile';
 
-describe('Profile Items', () => {
+describe('Profile', () => {
   test('Profile container items renders as expected', async () => {
-    const snapMissionItems = renderer.create(
+    const snapProfile = renderer.create(
       <MyProfile />,
     )
       .toJSON();
-    expect(snapMissionItems).toMatchSnapshot();
+    expect(snapProfile).toMatchSnapshot();
   });
 });

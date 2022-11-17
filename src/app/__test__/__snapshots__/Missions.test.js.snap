@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mission items Mission container items renders as expected 1`] = `
+exports[`Missions Mission container items renders as expected 1`] = `
 <section>
   <table>
     <tbody>

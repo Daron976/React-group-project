@@ -4,12 +4,12 @@ import NavBar from '../Navigation/NavBar';
 
 describe('Navigation', () => {
   test('Navigation container items renders as expected', async () => {
-    const snapMissionItems = renderer.create(
+    const snapNavigation = renderer.create(
       <BrowserRouter>
         <NavBar />
       </BrowserRouter>,
     )
       .toJSON();
-    expect(snapMissionItems).toMatchSnapshot();
+    expect(snapNavigation).toMatchSnapshot();
   });
 });
