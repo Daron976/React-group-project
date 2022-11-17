@@ -29,16 +29,27 @@ const MissionItems = (props) => {
 
   return (
     <tr>
-      <td>{name}</td>
-      <td>{description}</td>
-      <td>{memberState}</td>
+      <td className='td-name'>{name}</td>
+      <td className='td-description'>{description}</td>
       <td>
+        <div
+          className='td-status'
+          style={{background: memberState === 'NOT A MEMBER' ? '#6c767c' : '#24a1b3'}}
+        >
+          {memberState}
+        </div>
+      </td>
+      <td className='td-btn'>
         <button
           type="button"
           name="join"
           id="join"
           className="btn"
           onClick={btnText}
+          style={{
+            border: btnState === 'Join Mission' ? '1px solid #7a7a7a' : '1px solid #cf747c',
+            color: btnState === 'Leave Mission' ? '#cf747c' : 'black',
+          }}
         >
           {btnState}
         </button>
