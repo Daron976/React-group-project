@@ -113,13 +113,19 @@ td:nth-child(-n+3) {
 
 /* my-profile */
 
-.join-missions {
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.join-missions,
+.reserved-rockets {
   margin-top: 2rem;
-  margin-left: 15rem;
   max-width: 20rem;
 }
 
-.join-missions ul {
+.join-missions ul,
+.reserved-rockets ul {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -176,10 +182,16 @@ td:nth-child(-n+3) {
   }
 
   .link-container {
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 1rem;
     margin-left: 0.4rem;
     transition: all;
     transition-duration: 0.5s;
+  }
+
+  .divider {
+    display: none;
   }
 
   a {
@@ -194,7 +206,13 @@ td:nth-child(-n+3) {
     transition-duration: 0.5s;
   }
 
-  .join-missions {
-    margin-left: 1rem;
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-missions,
+  .reserved-rockets {
+    width: 18rem;
   }
 }
