@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { join, leave } from '../redux/missions/missions';
+import { join, leave } from '../../redux/missions/missions';
 
 const MissionItems = (props) => {
   const {
@@ -58,7 +58,7 @@ const MissionItems = (props) => {
 };
 
 MissionItems.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
