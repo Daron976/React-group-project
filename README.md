@@ -173,7 +173,7 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daron-wiafe-1b88141a6/)
 
-👤 **Author2**
+👤 **Ashwin Carvalho**
 
 - GitHub: [@gitHubhandle](https://github.com/AshwinCarvalho999)
 - Twitter: [@twitterhandle](https://twitter.com)
