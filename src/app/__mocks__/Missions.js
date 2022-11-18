@@ -1,6 +1,3 @@
-// import { useSelector } from 'react-redux';
-// import MissionItems from './mission-items';
-
 const Missions = () => (
   <section>
     <table>
@@ -11,14 +8,6 @@ const Missions = () => (
           <td className="table-header"><strong>Status</strong></td>
           <td className="table-header">&nbsp;</td>
         </tr>
-        {/* {missions.map((mission) => (
-            <MissionItems
-              key={mission.mission_id}
-              name={mission.mission_name}
-              description={mission.description}
-              id={mission.mission_id}
-            />
-          ))} */}
       </tbody>
     </table>
   </section>
