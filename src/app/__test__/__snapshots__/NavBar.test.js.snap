@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Navigation container items renders as expected 1`] = `
+<div
+  className="navs"
+>
+  <div
+    className="NavBar"
+  >
+    <img
+      alt="logo"
+      src="planet.png"
+    />
+    <h1>
+       Space Rockets
+    </h1>
+  </div>
+  <div
+    className="Links"
+  >
+    <div
+      className="link-container"
+    >
+      <a
+        className="home"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+      <div
+        className="divider"
+      >
+        |
+      </div>
+      <a
+        className="missions"
+        href="/Missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+      <div
+        className="divider"
+      >
+        |
+      </div>
+      <a
+        className="myProfile"
+        href="/MyProfile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </div>
+  </div>
+</div>
+`;

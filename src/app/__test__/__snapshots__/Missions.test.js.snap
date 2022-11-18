@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions Mission container items renders as expected 1`] = `
+<section>
+  <table>
+    <tbody>
+      <tr>
+        <td
+          className="table-header"
+        >
+          <strong>
+            Mission
+          </strong>
+        </td>
+        <td
+          className="table-header"
+        >
+          <strong>
+            Description
+          </strong>
+        </td>
+        <td
+          className="table-header"
+        >
+          <strong>
+            Status
+          </strong>
+        </td>
+        <td
+          className="table-header"
+        >
+           
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+`;
