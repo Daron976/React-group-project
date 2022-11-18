@@ -171,7 +171,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/Daron976)
 - Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daron-wiafe-1b88141a6/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daronkwiafe/)
 
 👤 **Ashwin Carvalho**
 
