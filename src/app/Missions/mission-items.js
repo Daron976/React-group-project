@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { join, leave } from '../../redux/missions/missions';
 
 const MissionItems = (props) => {
   const {
-    id, name, description,
+    id, name, description, reserved,
   } = props;
 
   const [btnState, setBtnState] = useState('Join Mission');
@@ -14,12 +14,19 @@ const MissionItems = (props) => {
 
   const dispatch = useDispatch();
 
-  const btnText = (e) => {
-    if (e.target.textContent === 'Join Mission') {
+  useEffect(() => {
+    if (reserved) {
       setBtnState('Leave Mission');
       setMemberState('Active Member');
+    }
+  }, [reserved]);
+
+  const btnText = (e) => {
+    if (e.target.textContent === 'Join Mission') {
       dispatch(join(id));
-    } else {
+      setBtnState('Leave Mission');
+      setMemberState('Active Member');
+    } else if (!reserved) {
       dispatch(leave(id));
       setMemberState('NOT A MEMBER');
       setBtnState('Join Mission');
@@ -61,6 +68,7 @@ MissionItems.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  reserved: PropTypes.bool,//eslint-disable-line
 };
 
 export default MissionItems;
