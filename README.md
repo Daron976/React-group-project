@@ -61,9 +61,9 @@ This is a react project that renders rocket data as well as mission data from an
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo">https://spacetravel976.netlify.app/</a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://spacetravel976.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
