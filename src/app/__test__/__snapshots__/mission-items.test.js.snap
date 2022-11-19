@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission items mission items renders as expected 1`] = `
+<tr>
+  <td
+    className="td-name"
+  >
+    test
+  </td>
+  <td
+    className="td-description"
+  >
+    this is a test description
+  </td>
+  <td>
+    <div
+      className="td-status"
+      style={
+        Object {
+          "background": "#6c767c",
+        }
+      }
+    >
+      NOT A MEMBER
+    </div>
+  </td>
+  <td
+    className="td-btn"
+  >
+    <button
+      className="btn"
+      id="join"
+      name="join"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #7a7a7a",
+          "color": "black",
+        }
+      }
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;

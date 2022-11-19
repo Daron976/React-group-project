@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.NavBar {
+  display: flex;
+  gap: 20px;
+}
+
+.NavBar > img {
+  width: 80px;
+}
+
+.link-container {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+/* missions */
+
+table {
+  border-collapse: collapse;
+  margin: 2rem 10.5rem;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+tr:nth-child(-n+1) {
+  background-color: #e0e0e0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+tr:nth-child(-n+10) {
+  border-bottom: 1px solid #c8c8c8;
+}
+
+tr:nth-child(n+2):hover {
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.36);
+}
+
+tr button {
+  padding: 0.5rem 1.5rem;
+  background: none;
+  border-radius: 5px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+tr button:hover {
+  padding: 0.7rem 2rem;
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.36);
+}
+
+td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+td:nth-child(-n+3) {
+  border-right: 1px solid #c8c8c8;
+}
+
+.td-status {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+/* my-profile */
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.join-missions,
+.reserved-rockets {
+  margin-top: 2rem;
+  max-width: 20rem;
+}
+
+.join-missions ul,
+.reserved-rockets ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.mission-list-item,
+.rocket-list-item {
+  list-style: none;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 1rem 0.5rem;
+}
+
+/* mobile */
+
+@media screen and (max-width: 1024px) {
+  table {
+    margin: 3rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navs {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  table {
+    margin-top: 0;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.36);
+  }
+
+  td {
+    margin: 0;
+    border-top: 1px solid #c8c8c8;
+  }
+
+  tr:nth-child(-n+1) {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  td:nth-child(-n+3) {
+    border-right: none;
+  }
+
+  tr button:hover {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .link-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 0.4rem;
+    transition: all;
+    transition-duration: 0.5s;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    transition: all;
+    transition-duration: 0.5s;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-missions,
+  .reserved-rockets {
+    width: 18rem;
+  }
+}
