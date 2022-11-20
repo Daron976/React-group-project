@@ -1,5 +1,6 @@
-import renderer from 'react-test-renderer';
-import MissionItems from '../__mocks__/mission-items';
+import React from 'react';
+import { renderState } from '../../utils/test-utils';
+import MissionItems from '../Missions/mission-items';
 
 describe('Mission items', () => {
   const missionArray = [
@@ -11,15 +12,15 @@ describe('Mission items', () => {
   ];
 
   test('mission items renders as expected', async () => {
-    const snapMissionItems = renderer.create(
+    const test = renderState(
       <MissionItems
         key={missionArray[0].id}
         id={missionArray[0].id}
         name={missionArray[0].name}
         description={missionArray[0].description}
       />,
-    )
-      .toJSON();
-    expect(snapMissionItems).toMatchSnapshot();
+    );
+
+    expect(test).toMatchSnapshot();
   });
 });
